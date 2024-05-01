@@ -1,16 +1,17 @@
-:root{
-    --theme:#1c9dea;
+@import "./customUtilities.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --theme: #1c9dea;
     --theme-hover: #1683c5;
-    --bg:#eff7fe;
-    --white:#fff;
-    --secondary:#223645;
+    --bg: #eff7fe;
+    --white: #fff;
+    --secondary: #223645;
     --secondary-hover: #182733;
 }
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import "./customUtilities.css";
 
 
-body{
+body {
     font-family: "Rubik", sans-serif;
 }
 
@@ -22,25 +23,41 @@ body{
     .bg-custom {
         background-color: var(--bg);
     }
+
     .text-theme {
         color: var(--theme);
     }
-    .btn-theme{
+
+    .btn-theme {
         color: var(--white);
         background: var(--theme);
         transition: all .2s ease;
-        &:hover{
+
+        &:hover {
             transition: all .2s ease;
             background: var(--theme-hover);
         }
     }
-    .btn-secondary{
+
+    .btn-secondary {
         color: var(--white);
         background: var(--secondary);
         transition: all .2s ease;
-        &:hover{
+
+        &:hover {
             transition: all .2s ease;
             background: var(--secondary-hover);
+        }
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .chat-list-inner {
+        height: calc(100vh - 335px);
+        @media screen and (max-width: 1279px) {
+            height: calc(100vh - 430px);
         }
     }
 }
