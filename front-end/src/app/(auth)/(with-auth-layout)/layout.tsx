@@ -1,4 +1,4 @@
-import authBg from '../../../../public/auth/auth-bg.svg';
+    import authBg from '../../../../public/auth/auth-bg.svg';
 import Image from "next/image";
 export default function AuthLayout({
    children,
