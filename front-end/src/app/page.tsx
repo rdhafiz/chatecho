@@ -1,10 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import landingBg from "../../public/home/landing-bg-1.png"
+import Header from "@/app/components/header";
 
 export default function Home() {
     return (
+
         <main>
+            <Header/>
             <div className="container">
                 <div className="text-center mt-20">
                     <h1 className="md:text-7xl sm:text-5xl text-4xl mb-5 font-bold"><span className="text-theme">One click.</span> Zero Friction</h1>
